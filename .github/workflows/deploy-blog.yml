@@ -82,13 +82,13 @@ jobs:
           build-blog: 'false'
           format: 'false'
 
-      # about 페이지 'PR 승인' 통계 — Han5991/Han5991 프로필 레포가 매일 갱신하는
+      # about 페이지 'PR 승인' 통계 — sangwook-dev/sangwook-dev 프로필 레포가 매일 갱신하는
       # config/summary.json(외부 OSS 머지 PR 총수)을 읽어 빌드 타임에 주입한다.
       # 조회 실패 시 빈값 → 페이지 폴백(|| '58')이 처리.
       - name: Fetch merged PR count
         id: pr_count
         run: |
-          json=$(curl -fsSL https://raw.githubusercontent.com/Han5991/Han5991/main/config/summary.json || true)
+          json=$(curl -fsSL https://raw.githubusercontent.com/sangwook-dev/sangwook-dev/main/config/summary.json || true)
           count=$(printf '%s' "$json" | jq -r '.mergedPRs // empty' 2>/dev/null || true)
           [[ "$count" =~ ^[0-9]+$ ]] || { echo "::warning::PR count fetch 실패 — about 페이지가 폴백값을 사용합니다"; count=''; }
           echo "count=$count" >> "$GITHUB_OUTPUT"
