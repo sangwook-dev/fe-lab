@@ -254,7 +254,7 @@ export default function PrivacyPage() {
               <p>
                 개인정보 관련 문의는{' '}
                 <a
-                  href="https://github.com/Han5991"
+                  href="https://github.com/sangwook-dev"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={inlineLink}

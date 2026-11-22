@@ -42,7 +42,7 @@ from xml.etree import ElementTree
 
 KST = timezone(timedelta(hours=9))
 
-USER_AGENT = "fe-lab-site-smoke/1 (+https://github.com/Han5991/fe-lab)"
+USER_AGENT = "fe-lab-site-smoke/1 (+https://github.com/sangwook-dev/fe-lab)"
 
 # 배포 직후 일시적으로 뜰 수 있는 상태코드. 이것만 재시도한다.
 # 404는 재시도해도 의미가 없고, 그 자체가 보고할 사실이다.

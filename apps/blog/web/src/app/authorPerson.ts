@@ -17,7 +17,7 @@ export function buildAuthorPersonJsonLd() {
     ...buildAuthorJsonLd(SITE, AUTHOR),
     image: {
       '@type': 'ImageObject',
-      url: 'https://github.com/Han5991.png?size=400',
+      url: 'https://github.com/sangwook-dev.png?size=400',
       width: 400,
       height: 400,
     },

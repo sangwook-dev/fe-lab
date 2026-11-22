@@ -48,7 +48,7 @@ export function buildAboutMetadata(): Metadata {
       type: 'profile',
       firstName: 'Sangwook',
       lastName: 'Han',
-      username: 'Han5991',
+      username: 'sangwook-dev',
     },
     twitter: card.twitter,
   };

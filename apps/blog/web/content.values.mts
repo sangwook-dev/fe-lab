@@ -109,7 +109,7 @@ export const AUTHOR_NAME = 'Sangwook Han';
 /** JSON-LD alternateName — 한글 이름 */
 export const AUTHOR_ALTERNATE_NAME = '한상욱';
 export const AUTHOR_ROLE = 'Frontend Engineer';
-export const AUTHOR_GITHUB = 'https://github.com/Han5991';
+export const AUTHOR_GITHUB = 'https://github.com/sangwook-dev';
 export const AUTHOR_LINKEDIN = 'https://www.linkedin.com/in/sangwook-han/';
 
 // ── 타임존 ───────────────────────────────────────────────────────────────────
