@@ -10,8 +10,12 @@ name: Claude Deps Audit
 
 on:
   schedule:
-    # 매주 월요일 09:00 KST (00:00 UTC)
-    - cron: '0 0 * * 1'
+    # 매주 월요일 09:17 KST (00:17 UTC). 정각 슬롯은 붐벼 실제로는 몇 시간 늦게 돌았다.
+    # 예약 실행의 GITHUB_ACTOR는 cron 줄을 마지막으로 바꾼 사람의 **그때 로그인 이름**이 굳은 값이다.
+    # 계정 이름을 바꾸면 그 옛 이름이 /users API에서 404가 되고, claude-code-action이 사람이 아닌
+    # actor로 보고 시작하자마자 죽는다(2026-11-23, Han5991 → sangwook-dev). 개명 뒤에는 cron 줄을 고쳐
+    # 다시 저장해야 한다(새 이름으로 다시 굳는다).
+    - cron: '17 0 * * 1'
   workflow_dispatch:
 
 concurrency:
